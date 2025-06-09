@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ecom-chatbot
 An AI-powered E-commerce Sales Chatbot built using React (frontend) and Flask (backend). This project simulates an online store where users can search, explore, and purchase products through a smart conversational interface. Includes a mock inventory, RESTful API communication, session handling, and responsive design.
 
@@ -117,3 +118,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 >>>>>>> 6493140 (Initialize project using Create React App)
+=======
+# ecom-chatbot
+>>>>>>> 48baff000db298122cb78e49f8e7f62b944014b3
