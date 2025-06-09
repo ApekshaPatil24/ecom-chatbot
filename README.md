@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # ecom-chatbot
 An AI-powered E-commerce Sales Chatbot built using React (frontend) and Flask (backend). This project simulates an online store where users can search, explore, and purchase products through a smart conversational interface. Includes a mock inventory, RESTful API communication, session handling, and responsive design.
 
@@ -46,6 +44,9 @@ ecom-chatbot/
 ├── frontend/
 │   ├── src/
 │   └── package.json
+
+#How to run project :
+firstly get all files in vs code or any editor you are comfortable with then just run app.py file in cmd as per it store in that particular folder so flask backend starts running then in vs code start running frontend then whole project run successfully.
 =======
 # Getting Started with Create React App
 
