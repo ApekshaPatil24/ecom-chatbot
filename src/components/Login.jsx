@@ -8,6 +8,7 @@ export default function Login({ onLogin }) {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [isRegistering, setIsRegistering] = useState(true);
+const API = process.env.REACT_APP_BACKEND_URL;
 
   // Images for the left side slider
   const images = ["i1.jpg", "i2.jpg", "i3.jpg","i4.jpg"]; // Add your image filenames here
@@ -29,7 +30,7 @@ export default function Login({ onLogin }) {
     const endpoint = isRegistering ? "register" : "login";
 
     try {
-      const res = await fetch(`http://localhost:5000/${endpoint}`, {
+      const res = await fetch(`${API}/${endpoint}`, {
         method: "POST",
         credentials: "include",
         headers: { "Content-Type": "application/json" },

@@ -10,6 +10,7 @@ const subcategories = {
   Headphones: ["All", "Bose", "Sony", "Beats", "Sennheiser", "JBL"],
   Tablet: ["All", "iPad", "Samsung Tab", "Amazon Fire", "Lenovo Tab", "Microsoft Surface"],
 };
+const API = process.env.REACT_APP_BACKEND_URL;
 
 const allSubcategories = ["All", ...Object.keys(subcategories)];
 
@@ -57,7 +58,7 @@ useEffect(() => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/chat", {
+      const response = await fetch(`${API}/chat`, {
         method: "POST",
         credentials: "include",
         headers: { "Content-Type": "application/json" },

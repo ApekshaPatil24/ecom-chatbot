@@ -8,8 +8,10 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # change this to a strong secret in production
 
 # CORS to allow frontend to send cookies for session management
-CORS(app, supports_credentials=True, origins=["http://localhost:3000"])
-
+CORS(app, supports_credentials=True, origins=[
+    "http://localhost:3000", 
+    "https://ecom-chatbot-frontend.onrender.com"  # Add your deployed frontend URL here
+])
 def extract_keywords(text):
     # Example: get all words longer than 3 characters
     return [word for word in re.findall(r'\b\w{4,}\b', text.lower())]
