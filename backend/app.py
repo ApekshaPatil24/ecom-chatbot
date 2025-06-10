@@ -7,6 +7,12 @@ import re
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # change this to a strong secret in production
 
+# Flask session config for cross-site cookies (e.g. Render frontend + backend)
+app.config.update(
+    SESSION_COOKIE_SAMESITE='None',
+    SESSION_COOKIE_SECURE=True
+)
+
 # CORS to allow frontend to send cookies for session management
 CORS(app, supports_credentials=True, origins=[
     "http://localhost:3000", 
